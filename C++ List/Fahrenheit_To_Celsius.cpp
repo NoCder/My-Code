@@ -2,10 +2,12 @@
 --EN--
 A program that converts Fahrenheit to temperature in degrees Celsius.
 Formula for conversion: C = 5/9(F-32)
+[You must be able to repeat the program without leaving the program.]
 
 --LV--
 Programma, kura pārvērš Fārenheita grādos uzdotu temperatūru par temperatūru Celsija grādos. 
 Formula pārvēršanai: C = 5/9(F-32)
+[Jābūt iespējai programmu izpildīt atkārtoti, neizejot no programmas.]
 */
 #include <iostream>
 using namespace std;
