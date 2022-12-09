@@ -7,7 +7,6 @@ Formula for conversion: C = 5/9(F-32)
 Programma, kura pārvērš Fārenheita grādos uzdotu temperatūru par temperatūru Celsija grādos. 
 Formula pārvēršanai: C = 5/9(F-32)
 */
-
 #include <iostream>
 using namespace std;
 
