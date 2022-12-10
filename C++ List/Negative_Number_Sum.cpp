@@ -23,6 +23,7 @@ int main(){
             if(digit<0) sum+=digit;
             cin >> digit;
         }
+        cin.ignore(10000, '\n');
         
         if(sum<0){
             cout << "Sum of negative numbers is " << sum << endl;
@@ -32,5 +33,6 @@ int main(){
 
         cout << "Do you want continue? If yes (1), no (0) \n";
         cin >> ok;
+        cin.ignore(10000, '\n');
     }while(ok==1);
 }
