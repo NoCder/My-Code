@@ -35,7 +35,7 @@ int main(){
         //Prints answers
         cout << "In text there are " << counter << " matching symbols - " << simb << endl;
 
-        //Repeatable program
+        //Repeatable program by Users choice
         cout << "Do you want continue? If yes (1), no (0) \n";
         cin >> ok;
         cin.ignore();
