@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test.css">
+    <!--<link rel="stylesheet" href="./css/main.css">-->
+    <title>Chess 2023</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navBar">
+            <div id="headerActive">
+                <a href="../index.html">Home<p> </p></a>
+                <a href="../html/about.html">About<p> </p></a>
+                <a href="../html/history.html">History<p> </p></a>
+                <a href="../html/moves.html">Moves<p> </p></a>
+                <a href="../html/GM.html">GM 2022<p> </p></a>
+            </div>
+        </div>
+        <div id="list"><p> </p>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required>
+
+                <p>Who has biggest rating in 2022?</p>
+                <input type="radio" id="anish" name="bigRate" value="an">
+                <label for="anish">Anish Giri</label><br>
+                <input type="radio" id="magnus" name="bigRate" value="ma">
+                <label for="magnus">Magnus Carlsen</label><br>
+                <input type="radio" id="hikaru" name="bigRate" value="hi">
+                <label for="hikaru">Hikaru Nakamura</label>
+            </form>
+            <button id="submit">Submit</button>
+            <p id="result" class="pass"></p>
+        </div>
+        <div id="footer"><p>2023</p></div>
+    </div>
+    <script src="../js/test.js"></script>
+</body>
+</html>

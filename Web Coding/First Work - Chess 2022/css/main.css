@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: pencilFont;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: popins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+#container {
+    background-image: url(../img/mainBg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+div#header {
+    position: relative;
+    height: 5vh;
+    background: #1b1b1b;
+}
+
+div#list {
+    position: absolute;
+    float: left;
+    width: 60vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#list div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div#baselist p#head {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 1vw;
+    font-size: 7vw;
+    margin: 0;
+    color: aliceblue;
+}
+
+div#baselist p {
+    font-stretch: extra-expanded;
+    font-size: 1.2vw;
+    margin-bottom: 50px;
+    color: aliceblue;
+    font-family: popins;
+}
+
+div#baselist a {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 3px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+div#baselist a:hover {
+    padding-left: 20px;
+}
+div#baselist a:hover img {
+    width: 3.5vw;
+   /* -webkit-filter: invert(100%); /* Safari/Chrome */
+    /*filter: invert(100%);*/
+}
+
+div#image {
+    position: relative;
+    float: right;
+    width: 40vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#image img {
+    width: 30vw;
+}
+
+div#footer {
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100vw;
+    background: #1b1b1b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444444;
+    font-family: popins;
+    font-weight: bold;
+    font-size: 1.2vw;
+}

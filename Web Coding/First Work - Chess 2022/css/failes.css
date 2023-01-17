@@ -1,0 +1,52 @@
+@font-face {
+    font-family: pencilFont;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-size: 17px;
+    color: aliceblue;
+    line-height: 1.4;
+}
+
+#showcase{
+    background-image: url(../img/mainBg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase a{
+    font-size: 30px;
+}
+
+#showcase p{
+    width: 60%;
+}
+
+#showcase h1{
+    font-size: 100px;
+    font-family: pencilFont;
+    letter-spacing: 10px;
+}
+
+#list{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#list img{
+    float: left;    
+    margin: 0 15px 0 0;
+}

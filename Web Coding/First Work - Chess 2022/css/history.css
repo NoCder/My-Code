@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: pencilFont;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: popins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@media print {
+    #navBar {
+        display: none;
+    }
+}
+
+
+#navBar {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    z-index: 20;
+    background: #1b1b1b;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#navBar a {
+    width: 15vw;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-family: popins;
+    /*border-style: solid;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar #active {
+    font-weight: bold;
+}
+
+#navBar a:hover p {
+    height: 1px;
+    width: 75%;
+    background-color: aliceblue;
+}
+
+#headerActive {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Top Instruction**/
+#container {
+    background-image: url(../img/mainBg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+div#header {
+    position: relative;
+    height: 10vh;
+    background: #1b1b1b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#header a {
+    width: 15vw;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-family: popins;
+    /*border-style: solid;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#header a:hover p {
+    height: 1px;
+    width: 75%;
+    background-color: aliceblue;
+}
+
+div#list {
+    position: absolute;
+    float: left;
+    width: 60vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#list div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div#baselist #head {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 1vw;
+    font-size: 7vw;
+    margin: 0;
+    color: aliceblue;
+}
+
+div#baselist p {
+    font-stretch: extra-expanded;
+    font-size: 1.2vw;
+    margin-bottom: 50px;
+    color: aliceblue;
+    font-family: popins;
+}
+
+div#baselist a {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 3px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+div#image {
+    position: relative;
+    float: right;
+    width: 40vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#image img {
+    height: 50vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+div#footer {
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    width: 100vw;
+    background: #1b1b1b;
+    z-index: 20;
+}
+
+/**Feature**/
+#container2 {
+    /*background-image: url(../img/whatisBg.jpg);*/
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 400vh;
+}
+
+#container2::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url(../img/chessPieces.png) 0 0 repeat;
+    transform: rotate(30deg);
+}
+
+div#list2 {
+    position: absolute;
+    float: left;
+    width: 100vw;
+    height: 400vh;
+    background: #1b1b1bf3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#list2 #baselist {
+    width: 90%;
+    height: 97.5%;
+}
+
+div#baselist p {
+    margin: 0;
+    margin-top: 3vh;
+}
+
+div#baselist p#head {
+    margin: 0;
+    margin-top: 10vh;
+}
+
+div#header2 {
+    position: relative;
+    height: 5vh;
+    background: #1b1b1b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container2 p#head {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 0.25vw;
+    font-size: 4vw;
+    margin: 0;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+#ChessPic1 {
+    float: right;
+    padding: 2vw;
+    width: 35vw;
+}
+
+#ChessPic2 {
+    float: right;
+    padding: 2vw;
+    width: 15vw;
+}
+
+#ChessPic3 {
+    float: left;
+    padding: 2vw;
+    width: 30vw;
+}
+
+div#dourceBase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+    height: 5vh;
+}
+
+p#source {
+    height: 100%;
+}
+
+p#source a#inactive {
+    font-size: 1.2vw;
+    color: rgb(77, 171, 253);
+    font-family: popins;
+    letter-spacing: 0px;
+}
+
+p b {
+    color: rgb(77, 171, 253);
+}
+
+#download img {
+    height: 100%;
+}
+
+#download img {
+    width: 20px;
+    aspect-ratio: 1/1;
+}

@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: pencilFont;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: popins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+#navBar {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    z-index: 20;
+    background: #1b1b1b;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#navBar a {
+    width: 15vw;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-family: popins;
+    /*border-style: solid;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar #active {
+    font-weight: bold;
+}
+
+#navBar a:hover p {
+    height: 1px;
+    width: 75%;
+    background-color: aliceblue;
+}
+
+#headerActive {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**Top Instruction**/
+#container {
+    background-image: url(../img/mainBg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+div#header {
+    position: relative;
+    height: 10vh;
+    background: #1b1b1b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#header a {
+    width: 15vw;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5vw;
+    font-family: popins;
+    /*border-style: solid;*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#header a:hover p {
+    height: 1px;
+    width: 75%;
+    background-color: aliceblue;
+}
+
+div#list {
+    position: absolute;
+    float: left;
+    width: 60vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#list div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div#baselist #head {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 1vw;
+    font-size: 7vw;
+    margin: 0;
+    color: aliceblue;
+}
+
+div#baselist p {
+    font-stretch: extra-expanded;
+    font-size: 1.2vw;
+    margin-bottom: 50px;
+    color: aliceblue;
+    font-family: popins;
+}
+
+div#baselist a {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 3px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+div#image {
+    position: relative;
+    float: right;
+    width: 40vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div#image img {
+    width: 25vw;
+}
+
+div#footer {
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    width: 100vw;
+    background: #1b1b1b;
+    z-index: 20;
+}
+
+/**Feature**/
+#container2 {
+    /*background-image: url(../img/whatisBg.jpg);*/
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+#container2::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: url(../img/whatisBg.jpg) 0 0 repeat;
+    transform: rotate(30deg);
+}
+
+div#header2 {
+    position: relative;
+    height: 5vh;
+    background: #1b1b1b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container2 div#lists {
+    height: 90vh;
+    background: #221e19c4;
+}
+
+#container2 p#head {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 0.25vw;
+    font-size: 4vw;
+    margin: 0;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+/**Objective**/
+#container3 {
+    background-image: url(../img/objective.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#container3 p#head {
+    font-family: pencilFont;
+    font-stretch: extra-expanded;
+    letter-spacing: 0.25vw;
+    font-size: 4vw;
+    margin: 0;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+
+#container3 #baselist p{
+    margin-bottom:  5px;
+}
+
+div#list3 {
+    position: relative;
+    float: right;
+    width: 65vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#list3 div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div#image3 {
+    position: relative;
+    float: left;
+    width: 35vw;
+    height: 90vh;
+    background: #1b1b1bc4;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div#image3 img {
+    width: 30vw;
+}
+
+#container3 ol{
+    color: aliceblue;
+    font-size: 1.2vw;
+    font-family: popins;
+    list-style-position: inside;
+}
