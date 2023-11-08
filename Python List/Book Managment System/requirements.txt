@@ -1,0 +1,4 @@
+Python version: 3.11.5
+tkinter version: 8.6.12
+customtkinter version: 5.2.1
+ctktable version: 0.8
